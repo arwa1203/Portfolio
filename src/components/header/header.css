@@ -1,0 +1,34 @@
+.nav-link{
+  color: #ffffff !important;
+  font-family: Montserrat;
+  font-weight: bold;
+  text-transform: lowercase;
+  text-shadow: 0 8px 6px -6px #999;
+  /* font-variant: small-caps; */
+}
+
+.navbar{
+  background-color: rgb(161, 71, 70);
+  -webkit-box-shadow: 0 8px 6px -6px #999;
+  -moz-box-shadow: 0 8px 6px -6px #999;
+  box-shadow: 0 8px 6px -6px #999;
+}
+
+b.linkPrefix{
+  font-size: small;
+  color: black;
+}
+
+#brand{
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: x-large;
+  padding-left: 10px;
+}
+
+img{
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+  
+}
