@@ -2,12 +2,14 @@
     "project":[
         {
             "title":"nam1e1",
-            "description":"boobookakaka",
+            "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet enim cursus erat laoreet ornare. Vestibulum eget aliquam urna. Duis mollis sed velit quis tristique. Nam consequat mollis velit eget dignissim. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed dignissim arcu id neque laoreet volutpat. Mauris ut augue a nulla interdum posuere vehicula eget metus. Ut dignissim sem turpis, ut elementum risus efficitur placerat.a",
+            "tech":["Javascript","HTML"],
             "githubLink": "www.google.com"
         },
         {
             "title":"name2",
-            "description":"boobookakaka2",
+            "description":"Mauris ut augue a nulla interdum posuere vehicula eget metus. Ut dignissim sem turpis, ut elementum risus efficitur placerat. Pellentesque imperdiet massa quis magna pharetra, id fringilla metus ultricies. Ut placerat fringilla purus. Pellentesque sodales lacus sapien, non mollis",
+            "tech":["Java","HTML"],
             "githubLink": "www.github.com"
         }
     ]

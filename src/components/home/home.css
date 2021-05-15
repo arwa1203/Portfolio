@@ -1,0 +1,109 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-top: 50px;
+  font-family: Montserrat;
+
+  /* height: 91vh;
+  background-image: url("../../assets/trianglify-lowres.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.4);
+  background-blend-mode: lighten; */
+}
+
+/* aboutMe */
+.aboutMe {
+  color: rgb(161, 71, 70);
+  width: 50%;
+  padding-right: 50px;
+  padding-left: 15px;
+  text-align: left;
+  border-left: 2px black dotted;
+  border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
+  border-top-right-radius: 10%;
+  border-bottom-right-radius: 10%;
+
+  background-color: rgb(255, 255, 255, 0.5);
+}
+
+.aboutMe h1 {
+  font-family: "Montserrat";
+}
+
+.aboutMe h2 {
+  font-family: Sacramento;
+  font-size: 2.3em;
+  line-height: 1px;
+  margin-bottom: 1px;
+  padding-left: 15px;
+}
+
+.aboutMe p {
+  width: 90%;
+}
+
+.aboutMe li {
+}
+
+.aboutMe li::before {
+  content: "\21AC";
+  margin: 0px 0.3em;
+  color: black;
+  font-size: 1.3em;
+}
+
+.aboutMe ul {
+  margin-left: -35px;
+  margin-top: 5px;
+  list-style-type: none;
+  -webkit-columns: 3;
+}
+
+/* pic  */
+
+.pic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pic img {
+  width: 400px;
+  height: 400px;
+  margin-left: -5em;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 8px 6px -6px #999;
+  -moz-box-shadow: 0 8px 6px -6px #999;
+  box-shadow: 0 8px 6px -6px rgb(0, 0, 0);
+  opacity: 50%;
+}
+
+.pic img:hover {
+  opacity: 100%;
+}
+
+/* reading section uwu */
+
+.readingSectionHeader {
+  padding: 50px 0px 25px 0px;
+  font-family: Sacramento;
+  font-stretch: expanded;
+}
+
+.readingSectionHeader h3::before,
+.readingSectionHeader h3::after {
+  color: rgb(161, 71, 70);
+  content: "\22EF\22EF\22EF\22EF\22EF\22EF\22EF\22EF\22EF\22EF\22EF\22EF";
+  margin: 5px;
+}
+
+.readingSection {
+  margin-right: 32vh;
+  margin-left: 32vh;
+  /* border-left: 2px black dotted; */
+  border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
+
+  background-color: rgb(255, 255, 255, 0.5);
+}

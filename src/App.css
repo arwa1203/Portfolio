@@ -39,8 +39,8 @@
 
 /* MY STUFF BELOW */
 
-body{ 
-  display:flex; 
-  flex-direction:column; 
+body {
+  display: flex;
+  flex-direction: column;
   background-color: #ffececb0 !important;
 }

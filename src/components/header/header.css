@@ -4,7 +4,14 @@
   font-weight: bold;
   text-transform: lowercase;
   text-shadow: 0 8px 6px -6px #999;
+
+  
   /* font-variant: small-caps; */
+}
+
+.nav-link:hover{
+  color: rgb(0, 0, 0) !important;
+
 }
 
 .navbar{
@@ -18,6 +25,8 @@ b.linkPrefix{
   font-size: small;
   color: black;
 }
+
+
 
 #brand{
   color: white;
