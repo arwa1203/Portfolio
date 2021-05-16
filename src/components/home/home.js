@@ -1,6 +1,6 @@
 import React from "react";
-import "./home.css";
-import kitty from "../../assets/kittenplaceholder.jpg";
+import "./home.scss";
+import myPic from "../../assets/kittenplaceholder.jpg";
 import { useEffect } from "react";
 
 const Home = () => {
@@ -34,7 +34,7 @@ const Home = () => {
           </p>
         </div>
         <div className="pic">
-          <img src={kitty} />
+          <img src={myPic} />
         </div>
       </div>
       <div className="readingSectionHeader">

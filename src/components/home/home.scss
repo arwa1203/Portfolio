@@ -1,3 +1,5 @@
+@import "../../themes.scss";
+
 .wrapper {
   display: flex;
   justify-content: center;
@@ -15,24 +17,29 @@
 
 /* aboutMe */
 .aboutMe {
-  color: rgb(161, 71, 70);
+  color: $accent-color;
   width: 50%;
   padding-right: 50px;
   padding-left: 15px;
   text-align: left;
-  border-left: 2px black dotted;
+  border-left: 2px $primary-color dotted;
   border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
   border-top-right-radius: 10%;
   border-bottom-right-radius: 10%;
 
-  background-color: rgb(255, 255, 255, 0.5);
+  background-color: $div-bg-color;
+  -webkit-box-shadow: 0 8px 6px -6px #999;
+  -moz-box-shadow: 0 8px 6px -6px #999;
+  box-shadow: 0 8px 6px -6px rgb(0, 0, 0, 0.8);
 }
 
 .aboutMe h1 {
+  color: $primary-color;
   font-family: "Montserrat";
 }
 
 .aboutMe h2 {
+  color: $primary-color;
   font-family: Sacramento;
   font-size: 2.3em;
   line-height: 1px;
@@ -50,7 +57,7 @@
 .aboutMe li::before {
   content: "\21AC";
   margin: 0px 0.3em;
-  color: black;
+  color: $primary-color;
   font-size: 1.3em;
 }
 
@@ -70,18 +77,22 @@
 }
 
 .pic img {
-  width: 400px;
-  height: 400px;
+  width: 450px;
+  height: 300px;
+  object-fit: cover;
   margin-left: -5em;
   border-radius: 50%;
   -webkit-box-shadow: 0 8px 6px -6px #999;
   -moz-box-shadow: 0 8px 6px -6px #999;
   box-shadow: 0 8px 6px -6px rgb(0, 0, 0);
-  opacity: 50%;
+  opacity: 100%;
 }
 
 .pic img:hover {
-  opacity: 100%;
+  border: 2px $primary-color solid;
+  // tra
+  // transition:  2s;
+  // transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
 }
 
 /* reading section uwu */
@@ -94,7 +105,8 @@
 
 .readingSectionHeader h3::before,
 .readingSectionHeader h3::after {
-  color: rgb(161, 71, 70);
+  color: $primary-color;
+  font-size: 0.7em;
   content: "\22EF\22EF\22EF\22EF\22EF\22EF\22EF\22EF\22EF\22EF\22EF\22EF";
   margin: 5px;
 }
@@ -105,5 +117,5 @@
   /* border-left: 2px black dotted; */
   border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
 
-  background-color: rgb(255, 255, 255, 0.5);
+  background-color: $div-bg-color;
 }

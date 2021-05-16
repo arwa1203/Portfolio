@@ -1,3 +1,5 @@
+@import "./themes.scss";
+
 .App {
   text-align: center;
 }
@@ -42,5 +44,6 @@
 body {
   display: flex;
   flex-direction: column;
-  background-color: #ffececb0 !important;
+  /* background-color: #f7ececb0 !important; */
+  background-color: $secondary-color !important;
 }

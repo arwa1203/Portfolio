@@ -1,5 +1,7 @@
+@import "../../themes.scss";
+
 .fab {
-  color: rgb(161, 71, 70);
+  color: $primary-color;
   font-size: 25px;
   padding: 5px;
 }
@@ -15,6 +17,6 @@ footer {
 
 .fas {
   font-size: 1em;
-  color: rgb(161, 71, 70);
+  color: $primary-color;
   padding-left: 2px;
 }
