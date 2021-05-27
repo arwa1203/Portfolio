@@ -1,9 +1,49 @@
-import React from "react";
+import React, { useState } from "react";
 import "./home.scss";
 import myPic from "../../assets/kittenplaceholder.jpg";
 import { useEffect } from "react";
+import BookCard from "../book/bookCard";
+import { Container, Row } from "react-bootstrap";
 
 const Home = () => {
+  const [listOfBooks, setListOfBooks] = useState([]);
+
+  useEffect(() => {
+    getBookDetails();
+  }, []);
+
+  function getBookDetails() {
+    const books = [];
+    fetch(
+      "https://www.googleapis.com/books/v1/users/100410344504318037111/bookshelves/3/volumes",
+      {
+        method: "GET",
+      }
+    )
+      .then((res) => res.json())
+      .then((data) => {
+        data.items.map((book) => {
+          const { title, authors, imageLinks } = book.volumeInfo;
+          books.push({
+            title,
+            authors,
+            cover: imageLinks.thumbnail,
+          });
+        });
+        setListOfBooks(books);
+      });
+  }
+
+  function renderBook() {
+    return (
+      <div className="bookDiv">
+        {listOfBooks.map((book, key) => {
+          return <BookCard book={book} key={key} />;
+        })}
+      </div>
+    );
+  }
+
   return (
     <div>
       <div className="wrapper">
@@ -22,16 +62,14 @@ const Home = () => {
             moving onto a software engineering role. On the side, I've created
             projects using
           </p>
-          <p>
-            Here are some of the technologies I have worked with:
-            <ul>
-              <li>something</li>
-              <li>something</li>
-              <li>something</li>
-              <li>something</li>
-              <li>something</li>
-            </ul>
-          </p>
+          Here are some of the technologies I have worked with:
+          <ul>
+            <li>something</li>
+            <li>something</li>
+            <li>something</li>
+            <li>something</li>
+            <li>something</li>
+          </ul>
         </div>
         <div className="pic">
           <img src={myPic} />
@@ -40,10 +78,7 @@ const Home = () => {
       <div className="readingSectionHeader">
         <h3>Currently Reading</h3>
       </div>
-      <div className="readingSection">
-        Add somethign here just to see how it looks
-        {/* put your goodreads api stuff here */}
-      </div>
+      <div className="readingSection">{listOfBooks ? renderBook() : ""}</div>
     </div>
   );
 };

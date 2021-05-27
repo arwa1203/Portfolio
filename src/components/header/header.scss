@@ -11,11 +11,11 @@
 }
 
 .nav-link:hover {
-  color: $accent-color !important;
+  color: $primary-color !important;
 }
 
 .navbar {
-  background-color: $primary-color;
+  background-color: $accent-color;
   -webkit-box-shadow: 0 8px 6px -6px #999;
   -moz-box-shadow: 0 8px 6px -6px #999;
   box-shadow: 0 8px 6px -6px #999;
@@ -23,7 +23,7 @@
 
 b.linkPrefix {
   font-size: small;
-  color: $accent-color;
+  color: $primary-color;
 }
 
 #brand {

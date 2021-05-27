@@ -9,10 +9,10 @@ const Footer = () => {
         <i className="fab fa-github-alt"></i>
       </a>
       <a href="https://www.linkedin.com/in/arwa-ahmed/">
-        <i class="fab fa-linkedin"></i>
+        <i className="fab fa-linkedin"></i>
       </a>
       <div>
-        <i class="fas fa-copyright"></i>Arwa Ahmed 2021
+        <i className="fas fa-copyright"></i>Arwa Ahmed 2021
       </div>
     </footer>
   );

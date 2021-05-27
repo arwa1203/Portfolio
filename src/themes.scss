@@ -1,4 +1,8 @@
-$primary-color: rgba(0, 2, 114, 0.685);
+$accent-color: rgba(0, 2, 114, 0.685);
 $secondary-color: #ffffff;
-$accent-color: #000000;
-$div-bg-color: rgba(0, 2, 114, 0.06);
+$primary-color: #000000;
+$div-bg-color: rgba($accent-color, 0.06);
+
+$main-font: "Raleway";
+$test-font: "Raleway";
+$accent-font: "Sacramento";

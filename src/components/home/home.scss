@@ -5,7 +5,7 @@
   justify-content: center;
   align-content: center;
   padding-top: 50px;
-  font-family: Montserrat;
+  font-family: $test-font;
 
   /* height: 91vh;
   background-image: url("../../assets/trianglify-lowres.png");
@@ -17,15 +17,16 @@
 
 /* aboutMe */
 .aboutMe {
-  color: $accent-color;
+  color: $primary-color;
   width: 50%;
   padding-right: 50px;
   padding-left: 15px;
   text-align: left;
-  border-left: 2px $primary-color dotted;
+  border-left: 2px $accent-color dotted;
   border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
   border-top-right-radius: 10%;
   border-bottom-right-radius: 10%;
+  font-size: 0.9em;
 
   background-color: $div-bg-color;
   -webkit-box-shadow: 0 8px 6px -6px #999;
@@ -34,12 +35,14 @@
 }
 
 .aboutMe h1 {
-  color: $primary-color;
-  font-family: "Montserrat";
+  color: $accent-color;
+  font-family: $test-font;
+  letter-spacing: -2px;
+  word-spacing: 5px;
 }
 
 .aboutMe h2 {
-  color: $primary-color;
+  color: $accent-color;
   font-family: Sacramento;
   font-size: 2.3em;
   line-height: 1px;
@@ -57,7 +60,7 @@
 .aboutMe li::before {
   content: "\21AC";
   margin: 0px 0.3em;
-  color: $primary-color;
+  color: $accent-color;
   font-size: 1.3em;
 }
 
@@ -82,25 +85,54 @@
   object-fit: cover;
   margin-left: -5em;
   border-radius: 50%;
-  -webkit-box-shadow: 0 8px 6px -6px #999;
-  -moz-box-shadow: 0 8px 6px -6px #999;
-  box-shadow: 0 8px 6px -6px rgb(0, 0, 0);
+  // -webkit-box-shadow: 0 8px 6px -6px #999;
+  // -moz-box-shadow: 0 8px 6px -6px #999;
+  // box-shadow: 0 8px 6px -6px rgb(0, 0, 0, 0.5);
+  border: 2px solid transparent;
   opacity: 100%;
 }
 
-.pic img:hover {
-  border: 2px $primary-color solid;
+.pic img:hover::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 100%;
+  border: 2px solid transparent;
+  border-top: 2px solid $accent-color;
+  border-right: 2px solid $accent-color;
+  border-radius: 50%;
+  opacity: 100%;
+
   // tra
   // transition:  2s;
   // transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+
+  // animation-name: spinning-circle;
+  // animation-duration: 20s;
+  // animation-iteration-count: infinite;
+}
+
+@keyframes spinning-circle {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
 
 /* reading section uwu */
 
 .readingSectionHeader {
+  color: $accent-color;
   padding: 50px 0px 25px 0px;
-  font-family: Sacramento;
-  font-stretch: expanded;
+  font-family: $main-font;
+  font-stretch: wider;
+  font-variant: small-caps;
 }
 
 .readingSectionHeader h3::before,
@@ -112,10 +144,19 @@
 }
 
 .readingSection {
-  margin-right: 32vh;
-  margin-left: 32vh;
+  margin-right: 20%;
+  margin-left: 20%;
   /* border-left: 2px black dotted; */
   border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
+  display: flex;
+  flex: 1;
+  flex-flow: wrap row;
+  height: 400px;
+}
 
-  background-color: $div-bg-color;
+.bookDiv {
+  width: 100%;
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-between;
 }

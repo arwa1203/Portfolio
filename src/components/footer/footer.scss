@@ -1,14 +1,15 @@
 @import "../../themes.scss";
 
 .fab {
-  color: $primary-color;
+  color: $accent-color;
   font-size: 25px;
   padding: 5px;
 }
 
 footer {
   text-align: center;
-  position: absolute;
+  position: relative;
+  padding: 20px 0px 20px 0px;
   bottom: 0;
   width: 100%;
   font-family: Montserrat;
@@ -17,6 +18,6 @@ footer {
 
 .fas {
   font-size: 1em;
-  color: $primary-color;
-  padding-left: 2px;
+  color: $accent-color;
+  padding-right: 5px;
 }
